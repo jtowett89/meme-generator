@@ -17,8 +17,8 @@ class MyMeme extends Component {
     //ensure that data is fetched at the beginning
     fetch("https://api.imgflip.com/get_memes") //call to URL
       .then((response) => response.json()) //turn promise into JS object
-      .then((joan) => {
-        this.setState({ allMemeImgs: joan }); // set allMemeImgs state
+      .then((data) => {
+        this.setState({ allMemeImgs: data }); // set allMemeImgs state
       });
   }
 
@@ -49,30 +49,29 @@ class MyMeme extends Component {
             <img src={this.state.randomImg} />
             <h1 style={{ textAlign: "center" }}>{this.state.bottomText}</h1>
           </div>
-
-          <input
-            className="form-control"
-            type="text"
-            value={this.state.topText}
-            name="topText"
-            placeholder="Top text"
-            onChange={this.handleChange}
-          />
-          <br />
-          <br />
-          <input
-            className="form-control"
-            type="text"
-            value={this.state.bottomText}
-            name="bottomText"
-            placeholder="Bottom Text"
-            onChange={this.handleChange}
-          />
-          <br />
-          <br />
-          <button className="mybutton" onClick={this.handleClick}>
-            Generate Meme
-          </button>
+          <div className="text-center">
+            <input
+              className="form-control"
+              type="text"
+              value={this.state.topText}
+              name="topText"
+              placeholder="Top text"
+              onChange={this.handleChange}
+            />
+            <br />
+            <input
+              className="form-control"
+              type="text"
+              value={this.state.bottomText}
+              name="bottomText"
+              placeholder="Bottom Text"
+              onChange={this.handleChange}
+            />
+            <br />
+            <button className="mybutton" onClick={this.handleClick}>
+              Generate Meme
+            </button>
+          </div>
         </div>
       </div>
     );

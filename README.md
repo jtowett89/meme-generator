@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,3 +73,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # meme-generator
 >>>>>>> 3e16062a7d45e9e584c2f955609afb01387fb705
+=======
+# meme-generator
+>>>>>>> 787f5cce3d5fd966a4c09ad7dd4c3cbff7519344

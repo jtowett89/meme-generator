@@ -7,16 +7,7 @@ class MyFooter extends Component {
     return (
       <footer className="myfooter">
         <p className="foot">
-          © 2021. All Rights reserved | Design by{" "}
-          <span
-            style={{
-              fontFamily: "Romantica Regular",
-              fontSize: "33px",
-              color: "#fff)",
-            }}
-          >
-            Joan Mumbi
-          </span>
+          © 2021. All Rights reserved | Design by Justice Towett
         </p>
       </footer>
     );
