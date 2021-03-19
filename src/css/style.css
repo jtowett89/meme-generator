@@ -32,19 +32,20 @@ img {
 }
 
 .meme {
-  font-family: "Romantica Regular";
+  font-family: "Calibri";
   color: #fff !important;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
-  padding: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 /*Header*/
 
 /*Footer*/
 .myfooter {
   width: 100%;
-  background-color: red;
+  background-color: #000;
   color: white;
   text-align: center;
   letter-spacing: 1px;
@@ -87,7 +88,7 @@ img {
 
 /*Buttons*/
 .mybutton {
-  background-color: red;
+  background-color: #000;
   border: none;
   color: white;
   padding: 8px 42px;
