@@ -1,15 +1,21 @@
-/** @format */
-
 import React, { Component } from "react";
 
 class MyFooter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
-      <footer className="myfooter">
+      <div className="myfooter">
         <p className="foot">
-          © 2021. All Rights reserved | Design by Justice Towett
+          &copy; {new Date().getFullYear()} Meme Generator. All rights reserved.
+          Developed by{" "}
+          <a href="https://justice.zerone.co.ke" target="_blank">
+            Justice Towett
+          </a>
         </p>
-      </footer>
+      </div>
     );
   }
 }
